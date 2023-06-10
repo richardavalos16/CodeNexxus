@@ -90,7 +90,7 @@ router.get('/', function (req, res) {
 });
 
 // PUERTO --> DIRECCION EN LA QUE SE ESTA CORRIENDO 
-const puerto = process.env.API_PORT || 8081;
+const puerto = process.env.API_PORT || 27017;
 app.use('/', router);
 var server = app.listen(puerto, function () {
     console.log(`Corriendo en http://localhost:${puerto}`);
